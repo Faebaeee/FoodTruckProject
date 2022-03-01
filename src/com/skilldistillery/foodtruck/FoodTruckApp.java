@@ -30,11 +30,7 @@ public class FoodTruckApp {
 			fa = sc.nextInt();
 
 			System.out.println("Please enter the name of the first food truck: ");
-<<<<<<< HEAD
-			truckName = sc.next();
-=======
-			truckName = sc.nextLine();
->>>>>>> e79377dad74b5085d8dacec8e3f7f074e92ca32d
+
 			
 			System.out.println("Please enter the name of the second food truck: ");
 			truckName = sc.nextLine();
