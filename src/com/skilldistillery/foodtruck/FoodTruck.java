@@ -1,62 +1,82 @@
 package com.skilldistillery.foodtruck;
 
 public class FoodTruck {
-FoodTruck(){
-	
-}
+private static int numID = 0;
+private int counter;
+private String truckName;
+private String foodType;
+int foodRating;
 
-	private static int counterId = 0;
-	private int numId;
-	private String truckName;
-	private String foodType;
-	private int foodRating;
-	
-   
-	 public FoodTruck(String name, String type, int rating) {
-		this.truckName = name;
-		this.foodType = type;
-		this.foodRating = rating;
-		counterId = counterId++;
+
+	   public int getCounter() {
+		return getCounter();
 	}
 
-	public String gettruckName() {
-		return truckName;
+	public void setCounter(int counter) {
+		this.counter = counter;
 	}
 
-	public void setName(String name, String truckName) {
+	public String getTruckName() {
+		return getTruckName();
+	}
+
+	public void setTruckName(String truckName) {
 		this.truckName = truckName;
 	}
-	public String getType() {
-		return foodType;
+
+	public String getFoodType() {
+		return getFoodType();
 	}
 
-	public void setType(String type) {
-		this.foodType = type;
+	public void setFoodType(String foodType) {
+		this.foodType = foodType;
 	}
 
-	public int getRating() {
-		return foodRating;
+	public int getTruckRating() {
+		return getTruckRating();
 	}
 
-	public void setRating(int rating) {
-		this.foodRating = rating;
+	public void setFoodRating(int foodRating) {
+		this.foodRating = foodRating;
 	}
+
+	public int getNumID() {
+		return numID;
+	}
+
+	public void setID(int iD) {
+		this.numID = getNumID();
+		counter++;
+	}
+
+	public FoodTruck[] getTrucks() {
+		return getTrucks();
+	}
+
 	
-	public int getNumId() {
-		return numId;
+
+	public FoodTruck(String truckName, String foodType, int truckRating, FoodTruck[] ftArray) {
+		super();
+		this.truckName = truckName;
+		this.foodType = foodType;
+		this.foodRating = truckRating;
+		this.numID = counter;
 	}
+
 	
-	public void setNumId(int numId) {
-		this.numId = numId;
+
+	public FoodTruck(String truckName2, String typeOfFood, double foodRating2) {
+		// TODO Auto-generated constructor stub
 	}
 
-
-	public void displayFoodTruck() {
-	}
-
+	@Override
 	public String toString() {
-		String output = "name=" + truckName + ", type=" + foodType + ", rating=" + foodRating;
-		return output;
-	}
+		return "FoodTruck [truckName=" + truckName + ", foodType=" + foodType + ", foodRating=" + foodRating + ", ID="
+				+ numID;
 	
-}
+
+
+
+}}
+
+	
