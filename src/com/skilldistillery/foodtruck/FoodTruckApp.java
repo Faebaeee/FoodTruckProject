@@ -54,7 +54,7 @@ public class FoodTruckApp {
 			truckApp.getHighestRatedTruck(trucks);
 			break;
 		case 4:
-			System.out.println("Thank you for using our Food Truck App! Have a great day \u263a");
+			System.out.println("Have a great day \u263a");
 			keepGoing = false;
 			break;
 		default:
